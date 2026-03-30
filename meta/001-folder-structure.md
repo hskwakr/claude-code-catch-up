@@ -6,21 +6,22 @@
 
 Claude Code のベストプラクティスを写経しながら学ぶプロジェクト。
 Anthropic公式の一次情報をインプットし、自分の仕事に使える形で資産化するのが目的。
-
-compound-effect/ のフレームワーク（ログ → 共通項 → 資産化）を学習にも適用する。
 スキマ時間に少しずつ進める前提なので、「どこまでやったか」「次どこから」がすぐわかることが重要。
 
 ## 全体構成
 
 ```
-claude-code-catchup/
+claude-code-catch-up/
 ├── PROGRESS.md                # エントリーポイント（進捗・次どこから）
 ├── meta/                      # 運用ルール・テンプレート・プロンプト
 │   ├── 001-folder-structure.md
 │   ├── templates/
 │   │   └── study-note.md      # 写経ノートのテンプレート
-│   └── prompts/
-│       └── session-start.md   # セッション開始プロンプト
+│   ├── prompts/
+│   │   ├── session-start.md   # セッション開始プロンプト
+│   │   └── progress-review.md # PROGRESS.md 見直しプロンプト
+│   └── progress/              # PROGRESS.md から退避した過去ログ
+│       └── YYYY-MM.md
 ├── notes/                     # 写経ノート（セクション別）
 │   ├── 01-xxx.md
 │   ├── 02-xxx.md
@@ -49,17 +50,8 @@ claude-code-catchup/
 
 - **役割: 自分の仕事に使える形で抜き出したもの**
 - ファイル名: 内容がわかる名前（日付不要）
-- 十分に成熟したら `compound-effect/assets/` に昇格させる
-- 例: 壁打ちプロンプトの改善 → `compound-effect/assets/procedures/implementation-task-flow.md` に統合
+- 十分に成熟したら実務プロジェクトに昇格させる
 
 ### meta/ フォルダ
 
-- compound-effect/ と同じパターン
-- 運用ルール・テンプレート・プロンプトを管理する
-
-## compound-effect/ との関係
-
-- **claude-code-catchup/** は学習のインプット側（写経・理解）
-- **compound-effect/** は実践のアウトプット側（資産化・運用）
-- 学んだことが実務に使えると判断したら、extractions/ → compound-effect/assets/ に昇格
-- 日々の学習記録は compound-effect/meta/reviews/ の夜の振り返りにも書く
+- 運用ルール（ADR）・テンプレート・プロンプトを管理する
