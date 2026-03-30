@@ -22,10 +22,11 @@ claude-code-catch-up/
 │   │   └── progress-review.md # PROGRESS.md 見直しプロンプト
 │   └── progress/              # PROGRESS.md から退避した過去ログ
 │       └── YYYY-MM.md
-├── notes/                     # 写経ノート（セクション別）
-│   ├── 01-xxx.md
-│   ├── 02-xxx.md
-│   └── ...
+├── notes/                     # 写経ノート（ページ別サブフォルダ）
+│   ├── best-practices/        # ページスラッグ = フォルダ名
+│   │   ├── 01-xxx.md
+│   │   └── ...
+│   └── another-page/
 └── extractions/               # 抽出パターン（自分の仕事に使える形）
     └── topic-name.md
 ```
@@ -41,6 +42,8 @@ claude-code-catch-up/
 ### notes/（写経ノート）
 
 - **役割: 記事の写経 + 自分の気づきの記録**
+- ページ（記事）単位でサブフォルダを作る。フォルダ名はURLスラッグに合わせる
+  - 例: `notes/best-practices/`, `notes/common-workflows/`
 - ファイル名: `NN-セクション名.md`（記事の構成に合わせた連番）
 - 写経と自分の気づき・疑問を混ぜて書いてOK
 - 完璧に書く必要はない。理解を深めることが目的
