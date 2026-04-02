@@ -7,11 +7,11 @@
 
 ## 進捗
 
-02-verification 写経・振り返り完了（2026-04-01）。
+03-explore-plan-code 写経・振り返り完了（2026-04-02）。
 
 ## 次にやること
 
-1. `notes/best-practices/03-explore-plan-code.md` から写経を再開する
+1. `notes/best-practices/04-specific-context.md` から写経を再開する
 
 ## ノート（best-practices）
 
@@ -19,7 +19,7 @@
 |---|--------|---------|------|
 | 01 | `01-introduction.md` | 導入（コンテキストウィンドウが最重要リソース） | 完了 |
 | 02 | `02-verification.md` | 自分の作業を検証する方法を与える | 完了 |
-| 03 | `03-explore-plan-code.md` | 探索→計画→コーディング | 未着手 |
+| 03 | `03-explore-plan-code.md` | 探索→計画→コーディング | 完了 |
 | 04 | `04-specific-context.md` | 具体的なコンテキストを提供する | 未着手 |
 | 05 | `05-environment-setup.md` | 環境を設定する | 未着手 |
 | 06 | `06-communication.md` | 効果的にコミュニケーションする | 未着手 |
@@ -41,4 +41,4 @@
 - 過去ログ → [meta/progress/](meta/progress/)
 
 ---
-*最終更新: 2026-04-01（02-verification 写経・振り返り完了）*
+*最終更新: 2026-04-02（03-explore-plan-code 写経・振り返り完了）*
